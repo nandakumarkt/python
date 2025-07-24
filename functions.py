@@ -79,12 +79,75 @@
 # display_result("Subtraction", subtract_outcome) # Calls display_result with the name "Subtraction"
 
 #################################################
-def even_odd(num):
-    if num%2==0:
-        return "even"
-    else:
-        return "odd"
-num=int(input("Enter a number, we can find odd or even: "))
-result=even_odd(num)
-print(num, 'is', result)
+# def even_odd(num):
+#     if num%2==0:
+#         return "even"
+#     else:
+#         return "odd"
+# num=int(input("Enter a number, we can find odd or even:\n"))
+# result=even_odd(num)
+# print(num, 'is', result)
 ####################################################
+##This program takes a number as input and tells you if it's positive, negative, or zero.
+# def type(num):
+#     if num==0:
+#         return "Number is Zero"
+#     elif num>0:
+#         return "Number is Positive"
+#     elif num<0:
+#         return "Number is Negative"
+#     else:
+#         None
+# try:
+#     num = int(input("Enter a number, we can find zero or negative or positive:\n"))
+#     result = type(num)
+#     print(num, 'is', result)
+# except ValueError:
+#     print("Invalid Number")
+
+#####################################################################
+####Grade Calculator: This program takes a student's score as input and returns their corresponding letter grade (e.g., A, B, C, D, F). You'll need to define your own grading scale.
+# def gradecalc(grade):
+#     if grade>=90:
+#         return "A"
+#     elif grade>=70:
+#         return "B"
+#     elif grade>=50:
+#         return "C"
+#     elif grade<50:
+#         return "D"
+#     else:
+#         None
+# i=0
+# while i<3:
+#     try:
+#         grade=int(input("What is your score? \n"))
+#         result=gradecalc(grade)
+#         print("Your grade is", result)
+#     except ValueError:
+#         print("Incorect Input")
+#     i=i+1
+#############################################################################
+
+# def is_even(num):
+#     return num%2==0
+# def square(num):
+#     return num**2
+# def cube(num):
+#     return num**3
+#
+# try:
+#     result=int(input("Input the number: "))
+#     if is_even(result):
+#         print(f"{result} is even")
+#     else:
+#         print(f"{result} is even")
+#     print(f"The square of {result} is {square(result)} and the Cube of {result} is {cube(result)}")
+# except ValueError:
+#     print("Incorect Input")
+
+######################################################################################
+
+
+
+
