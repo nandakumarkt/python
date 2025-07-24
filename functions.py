@@ -147,6 +147,34 @@
 #     print("Incorect Input")
 
 ######################################################################################
+##################Different ways to find Length##########
+##################Repeated For Loop######################
+# name="Nandakumar"
+# print(len(name))
+# print('#################')
+# name="Prajay"
+# length=0
+# for n in name:
+#     length+=1
+# print(length)
+# print('#################')
+# name="Ridhamika"
+# length=0
+# for n in name:
+#     length+=1
+# print(length)
+##########simple code to find length using Function##########
+def find_length(name):
+    length=0
+    for n in name:
+        length+=1
+    return length
+print(find_length("Nandakumar"))
+print(find_length("Menaka"))
+print(find_length("Prajay"))
+print(find_length("Ridhamika"))
+#############################################################
+
 
 
 
