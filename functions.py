@@ -4,6 +4,8 @@
 # test("Menaka")
 # test("Prajay")
 # test("Ridhamika")
+from enum import nonmember
+
 
 # def test(name):
 #     print(f"The name is {name}")  # format string
@@ -164,16 +166,42 @@
 #     length+=1
 # print(length)
 ##########simple code to find length using Function##########
-def find_length(name):
-    length=0
-    for n in name:
-        length+=1
-    return length
-print(find_length("Nandakumar"))
-print(find_length("Menaka"))
-print(find_length("Prajay"))
-print(find_length("Ridhamika"))
+# def find_length(name):
+#     length=0
+#     for n in name:
+#         length+=1
+#     return length
+# print(find_length("Nandakumar"))
+# print(find_length("Menaka"))
+# print(find_length("Prajay"))
+# print(find_length("Ridhamika"))
 #############################################################
+
+######Homework - Maximum of Three - Write a function to find the largest of three numbers
+
+def largest(a,b,c):
+    if a>b and a>c:
+        #return a
+        return f"First number you entered as {a} is the greatest"
+
+    elif a<b and b>c:
+        #return b
+        return f"Second number you entered as {b} is the greatest"
+    else:
+        #return c
+        return f"Third number you entered as {c} is the greatest"
+
+
+a=int(input("Enter your first number: "))
+b=int(input("Enter your second number: "))
+c=int(input("Enter your third number: "))
+
+
+#print("Greatest is: ", largest(a,b,c))
+print(largest(a, b, c))
+
+
+
 
 
 

@@ -47,10 +47,33 @@
 
 
 ########Replace##########################################################
-with open('output.txt', 'r') as file:
-    content=file.read()
-modified_content=content.replace('Menaka', 'Nanda')
+# with open('output.txt', 'r') as file:
+#     content=file.read()
+# modified_content=content.replace('Menaka', 'Nanda')
+#
+# with open('output.txt', 'w') as file:
+#     file.write(modified_content)
+# #####################Replace First One##################################
+# with open('output.txt', 'r') as file:
+#     content=file.read()
+# modified_content=content.replace('thanks', 'regards',1)
+#
+# with open('output.txt', 'w') as file:
+#     file.write(modified_content)
+######################Replace in a Line (line index)################################
+# with open('output.txt', 'r') as file:
+#     lines=file.readlines()
+# lines[11]=lines[11].replace('thanks', 'regards') #Line 12
+#
+# with open('output.txt', 'w') as file:
+#     file.writelines(lines)
+#####################Delete Lines##############################
+def delete_lines(file_path, start_line, end_line):
+    with open(file_path, 'r') as file:
+        lines=file.readlines()
+    del lines[start_line-1:end_line]
 
-with open('output.txt', 'w') as file:
-    file.write(modified_content)
-#########################################################################
+    with open(file_path,'w') as file:
+        file.writelines(lines)
+delete_lines('output.txt',3,5)
+
